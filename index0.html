@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge"><!--开启ie8预渲染模式--------->
+    <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no"><!--配置视窗 宽度 缩放比例 是否可手动缩放--------->
+    <title>响应式首页</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <!--animate.css 是一个来自国外的 CSS3 动画库，它预设了抖动（shake）、闪烁（flash）、弹跳（bounce）、-->
+    <!--翻转（flip）、旋转（rotateIn/rotateOut）、淡入淡出（fadeIn/fadeOut）等多达 60 多种动画效果，几乎包含-->
+    <!--了所有常见的动画效果。-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+
+<!--导航-->
+<nav class="navbar navbar-default navbar-fixed-top mynav">
+    <div class="container">
+        <!--小屏幕导航按钮和logo-->
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <!--navbar-toggle用于nav收缩时显示 collapse折叠插件，折叠目标为.navbar-collapse-->
+                <span class="icon-bar"></span>  <!--一个icon-bar为一根线-->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--<a href="#" class="navbar-brand">得乐在线</a>-->
+            <div class="logo">SHARE</div>
+            <!--navbar-brand一个样式，使logo居中等-->
+        </div>
+        <!--小屏幕导航按钮和logo-->
+        <!--文字导航-->
+        <div class="navbar-collapse collapse">
+            <!--collapse默认折叠 navbar-collapse自取-->
+            <ul class="nav navbar-nav navbar-right">
+                <!--nav导航专用类，用来取消li的默认样式-->
+                <li><a href="#home">首页</a></li>
+                <li><a href="#bbs">论坛</a></li>
+                <li><a href="#new-movie">今日推荐</a></li>
+                <li><a href="#movie-order">电影预约</a></li>
+                <li><a href="#share">分享</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </div>
+        <!--文字导航-->
+    </div>
+</nav>
+<!--导航-->
+
+<!--home-->
+<section id="home">
+    <div class="lvjing">
+        <div class="container">
+            <div class="row wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <h1>最新科幻巨作来袭！</h1>
+                    <p>
+                        星球炸裂将于3月15号震撼上映<br/>
+                        享受星际穿越，无声的星球演变颠覆古往今来！
+                    </p>
+
+                    <div id="myCarousel" class="carousel slide" data-interval="3500" data-wrap="true">
+                        <!-- 轮播（Carousel）指标 -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+
+                        </ol>
+                        <!-- 轮播（Carousel）项目 -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="home-foot-bg/Carousel0.jpg" class="img-responsive" alt="movie"/>
+
+                            </div>
+
+                            <div class="item">
+                                <img src="home-foot-bg/Carousel2.jpg" class="img-responsive" alt="movie"/>
+                            </div>
+                            <div class="item">
+                                <img src="home-foot-bg/Carousel4.jpg" class="img-responsive" alt="movie"/>
+                            </div>
+                            <div class="item">
+                                <img src="home-foot-bg/Carousel5.jpg" class="img-responsive" alt="movie"/>
+                                <div class="carousel-caption"> 热映！</div>
+                            </div>
+                        </div>
+                        <!-- 轮播（Carousel）导航 -->
+                        <a class="carousel-control left" href="#myCarousel"
+                           data-slide="prev">&lsaquo;
+                        </a>
+                        <a class="carousel-control right" href="#myCarousel"
+                           data-slide="next">&rsaquo;
+                        </a>
+                    </div>
+                    <!--img-responsive图片自适应-->
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--home-->
+
+<!--bbs-->
+<section id="bbs">
+    <div class="container">
+        <div class="row wow fadeInUp" data-wow-duration="0.5s">
+            <!--left-->
+            <div class="col-md-4">
+                <a href="#" target="_blank">
+                    <img src="icon/movie-icon.jpg" class="img-responsive" alt=""/>
+                    <h3>电影区</h3>
+                    <p>一睹最新电影，购票及点评！</p>
+                </a>
+            </div>
+            <!--middle-->
+            <div class="col-md-4">
+                <a href="#" target="_blank">
+                    <img src="icon/game-icon.jpg" class="img-responsive" alt=""/>
+                    <h3>游戏区</h3>
+                    <p>掌握最新游戏资讯</p>
+                </a>
+            </div>
+            <!--right-->
+            <div class="col-md-4">
+                <a href="#" target="_blank">
+                    <img src="icon/music-icon.jpg" class="img-responsive" alt=""/>
+                    <h3>音乐区</h3>
+                    <p>什么是真正的音乐？</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--bbs-->
+
+<!--new-movie-->
+<section id="new-movie">
+    <div class="container">
+        <div class="col-md-6 wow fadeInLeft">
+            <h2>《0.5毫米》</h2>
+            <p>《0.5毫米》是由安藤桃子执导，由安藤樱﹑织本顺吉﹑木内みどり﹑土屋希望等主演的剧情电影</p>
+            <p><span class="glyphicon"></span>该片讲述貌不惊人的山岸佐和看护孤单的老人的故事</p>
+            <!--glyphicon图标类-->
+            <p><span class="glyphicon"></span>突如其来的意外让佐和丢掉了工作，她还被赶出公寓。没有家、没有钱、没有工作，毫无征兆的风暴将佐和原本平凡的生活击得粉碎,离开了熟悉的街道，佐和漫无目的四处彷徨，在此期间她相继邂逅了三位生活在社会边缘的老人……</p>
+        </div>
+        <div class="col-md-6 wow fadeInRight">
+            <img src="new-today/new-movie.jpg" class="img-responsive" alt=""/>
+            <!--图片会自动填满一个栅格，栅格自带padding,与其它栅格分一段距离-->
+        </div>
+    </div>
+</section>
+<!--new-movie-->
+
+<!--new-game-->
+<section id="new-game">
+    <div class="container wow fadeInUp">
+        <div class="col-md-6">
+            <img src="new-today/new-game.jpg" class="img-responsive" alt=""/>
+        </div>
+        <div class="col-md-6">
+            <h2>《女神异闻录5》</h2>
+            <p>《女神异闻录5》（ペルソナ5或Persona5,简称：P5）是由ATLUS开发制作的RPG系列《女神异闻录》的第五作</p>
+            <p><span class="glyphicon "></span>本作描写了主人公与同伴们白天作为学生生活，夜晚则运用名为“Persona”的特殊力量，化身为“窃取心灵的怪盗”，向社会中扭曲腐坏的大人们发起挑战的都市浪漫物语</p>
+            <p><span class="glyphicon"></span>玩家扮演着一群自称为“心之怪盗团”的神秘少年少女侠盗们，以“令腐败的大人们洗心革面”为目的，发起很多偷盗案件，被“偷去心灵”的人们都突然承认自己的罪行。而他们在作案的过程中，亦都和在背后扭曲人心和社会公义的黑暗势力进行殊死斗争。</p>
+        </div>
+    </div>
+</section>
+<!--new-game-->
+
+<!--movie-order-->
+<section id="movie-order">
+    <div class="container">
+        <div class="row wow fadeIn" data-wow-delay="0.6s">
+            <div class="col-md-12">
+                <h2>最近电影预约</h2>
+            </div>
+            <div class="col-md-3">
+                <div class="movie-order">
+                    <img src="new-movie/new-movie-1.jpeg" class="img-responsive" alt=""/>
+                    <a href="#" class="btn btn-primary" target="_blank" role="button">
+                        点击查看详细信息
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="movie-order">
+                    <img src="new-movie/new-movie-2.jpeg" class="img-responsive" alt=""/>
+                    <a href="#" class="btn btn-primary" target="_blank" role="button">
+                        点击查看详细信息
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="movie-order">
+                    <img src="new-movie/new-movie-3.jpeg" class="img-responsive" alt=""/>
+                    <a href="#" class="btn btn-primary" target="_blank" role="button">
+                        点击查看详细信息
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="movie-order">
+                    <img src="new-movie/new-movie-4.jpeg" class="img-responsive" alt=""/>
+                    <a href="#" class="btn btn-primary" target="_blank" role="button">
+                        点击查看详细信息
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="movie-order">
+                    <img src="new-movie/new-movie-5.jpeg" class="img-responsive" alt=""/>
+                    <a href="#" class="btn btn-primary" target="_blank" role="button">
+                        点击查看详细信息
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="movie-order">
+                    <img src="new-movie/new-movie-6.jpeg" class="img-responsive" alt=""/>
+                    <a href="#" class="btn btn-primary" target="_blank" role="button">
+                        点击查看详细信息
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="movie-order">
+                    <img src="new-movie/new-movie-7.jpeg" class="img-responsive" alt=""/>
+                    <a href="#" class="btn btn-primary" target="_blank" role="button">
+                        点击查看详细信息
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="movie-order">
+                    <img src="new-movie/new-movie-8.jpeg" class="img-responsive" alt=""/>
+                    <a href="#" class="btn btn-primary" target="_blank" role="button">
+                        点击查看详细信息
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--movie-order-->
+
+<!--share-->
+<section id="share">
+    <div class="container">
+        <div class="row  wow fadeInUp">
+            <div class="col-md-6">
+                <h2>将网站分享给朋友！</h2>
+                <p>
+                    有趣的电影，动听的音乐，最新的资讯，点击一下按钮分享给朋友吧！
+                </p>
+                <button class="btn btn-primary xinlang">
+                    <span class="glyphicon glyphicon-gift"></span>
+                    新浪
+                </button>
+                <button class="btn btn-primary tengxun">
+                    <span class="glyphicon glyphicon-gift"></span>
+                    企鹅
+                </button>
+            </div>
+            <div class="col-md-6">
+                <img src="home-foot-bg/share.jpg" class="img-responsive" alt=""/>
+            </div>
+        </div>
+    </div>
+</section>
+<!--share-->
+
+<!--contact-->
+<section id="contact">
+    <div class="lvjing">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6  wow fadeInLeft">
+                    <h2>
+                        <span class="glyphicon glyphicon-send"></span>
+                        &nbsp;
+                        联系SHARE
+                    </h2>
+                    <p>
+                        分享有趣，享受快乐！
+                    </p>
+                    <address>
+                        <p>
+                            <span class="glyphicon glyphicon-home"></span>
+                            &nbsp;
+                            地址:地球村口小桥处
+                        </p>
+                        <p>
+                            <span class="glyphicon glyphicon-phone-alt"></span>
+                            &nbsp;
+                            联系电话：086-7522698
+                        </p>
+                        <p>
+                            <span class="glyphicon glyphicon-envelope"></span>
+                            &nbsp;
+                            邮箱:linkxieshengkai@gmail.com
+                        </p>
+                    </address>
+                </div>
+                <div class="col-md-6  wow fadeInRight">
+                    <form action="#" method="post">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="您的姓名"/>
+                            <!--form-control添加bootstrap表单的样式-->
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control" placeholder="您的邮箱"/>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" placeholder="标题"/>
+                        </div>
+                        <div class="col-md-12">
+                            <textarea class="form-control" placeholder="留言内容" rows="4"></textarea>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8">
+                            <input type="submit" class="form-control" value="提交"/>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--contact-->
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Copyright&nbsp;©&nbsp;2017-2019&nbsp;&nbsp;www.share.com&nbsp;All Rights Reserved&nbsp;备案号：浙ICP备13464270号-6
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--footer-->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.singlePageNav.min.js"></script>
+<!--jquery.singlePageNav.min.js单页面滚动导航设计插件-->
+    <script type="text/javascript" src="js/wow.min.js"></script>
+<!--WOW.js实现CSS动画效果的插件,改变动画风格、延迟、长度、偏移和迭代等-->
+    <script type="text/javascript" src="js/my.js"></script>
+</body>
+</html>
